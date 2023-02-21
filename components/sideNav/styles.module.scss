@@ -1,0 +1,78 @@
+.wrapperNav {
+  background-color: #000;
+  width: 241px;
+  padding: 24px;
+  .icon {
+    opacity: 0;
+    svg {
+      height: 40px;
+      max-width: 131px;
+      width: 100%;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  .sideNavItem,
+  .sideNavItemProfile {
+    color: #b3b3b3;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.875rem;
+    align-items: center;
+    font-weight: 700;
+    gap: 16px;
+    height: 40px;
+    transition: 0.2s;
+    svg path {
+      fill: #b3b3b3;
+      transition: 0.2s;
+    }
+
+    &:hover {
+      color: #fff;
+      svg path {
+        fill: #fff;
+      }
+    }
+  }
+  .wrapperItemProfile {
+    margin-top: 24px;
+  }
+
+  .wrapperIconMenuItem,
+  .wrapperIconMenuItemFevourite {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 2px;
+    transition: 0.2s;
+    svg path {
+      fill: #000;
+    }
+  }
+  .sideNavItemProfile {
+    &:hover {
+      .wrapperIconMenuItem,
+      .wrapperIconMenuItemFevourite {
+        transition: 0.2s;
+        opacity: 1;
+      }
+      .wrapperIconMenuItem {
+        svg path {
+          fill: #000;
+        }
+      }
+    }
+  }
+  .wrapperIconMenuItemFevourite {
+    background: linear-gradient(135deg, #450af5, #c4efd9);
+    svg path {
+      fill: #fff;
+    }
+  }
+}
